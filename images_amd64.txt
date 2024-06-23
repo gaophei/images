@@ -1,0 +1,31 @@
+// rancher
+rancher/nginx-ingress-controller:nginx-0.35.0-rancher2
+rancher/coreos-kube-state-metrics:v1.9.7
+rancher/prom-node-exporter:v1.0.1
+rancher/grafana-grafana:7.1.5
+rancher/coreos-prometheus-operator:v0.39.0
+rancher/mirrored-library-nginx:1.19.9-alpine
+rancher/prometheus-auth:v0.2.1
+// misc
+inanimate/echo-server:latest
+// bitnami
+bitnami/redis:6.2
+bitnami/redis:4.0
+bitnami/redis:5.0.8-debian-10-r33
+bitnami/bitnami-shell:10-debian-10
+// elastic.co
+docker.elastic.co/beats/filebeat:7.8.0
+docker.elastic.co/beats/metricbeat:7.8.0
+docker.elastic.co/kibana/kibana:7.8.0
+docker.elastic.co/logstash/logstash:7.8.0
+docker.elastic.co/eck/eck-operator:1.2.1
+// fluentd
+fluent/fluentd:v1.3-onbuild-1
+// oracle-xe
+christophesurmont/oracle-xe-11g:latest
+// prometheus
+bitnami/redis-exporter:1-debian-10
+prom/snmp-generator:latest
+// tomcat
+tomcat:7-jre8-alpine
+// end of file
