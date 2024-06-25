@@ -26,7 +26,7 @@ while read image; do
     continue
   fi
 
-  old_image = $(echo "$image" | awk -F'/' '{print $NF}')
+  old_image=echo "$image" | awk -F'/' '{print $NF}'
   new_image="$registry"/ali-dockerhub-2024/"$old_image"
 
   # group log
