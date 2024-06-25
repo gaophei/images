@@ -34,6 +34,9 @@ jobs:
           username: ${{ secrets.HARBOR_COMMON_USERNAME }}
           password: ${{ secrets.HARBOR_COMMON_PASSWORD }}
 
+      - name: Set execute permission
+        run: chmod +x retag-images-multiarch.sh
+
       - name: Retag & Push multiarch images
         run: ./retag-images-multiarch.sh images_multiarch.txt ${{ secrets.ALIYUN_REGISTRY }}
 
@@ -51,6 +54,8 @@ jobs:
           username: ${{ secrets.HARBOR_COMMON_USERNAME }}
           password: ${{ secrets.HARBOR_COMMON_PASSWORD }}
 
+      - name: Set execute permission
+        run: chmod +x retag-images.sh
       - name: Retag & Push amd64 images
         run: ./retag-images.sh images_amd64.txt ${{ secrets.ALIYUN_REGISTRY }}
 
