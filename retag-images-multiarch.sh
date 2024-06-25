@@ -26,7 +26,7 @@ while read image; do
     continue
   fi
 
-  new_image="$registry"/library/"$image"
+  new_image="$registry"/ali-dockerhub-2024/"$image"
 
   # group log
   # https://docs.github.com/en/actions/using-workflows/workflow-commands-for-github-actions#grouping-log-lines
