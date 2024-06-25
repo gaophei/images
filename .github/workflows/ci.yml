@@ -35,7 +35,7 @@ jobs:
           password: ${{ secrets.HARBOR_COMMON_PASSWORD }}
 
       - name: Retag & Push multiarch images
-        run: ./retag-images-multiarch.sh images_multiarch.txt ${{ secrets.HARBOR2_URL }}
+        run: ./retag-images-multiarch.sh images_multiarch.txt ${{ secrets.ALIYUN_REGISTRY }}
 
   sync_amd64:
 
