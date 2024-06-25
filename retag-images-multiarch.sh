@@ -26,7 +26,8 @@ while read image; do
     continue
   fi
 
-  new_image="$registry"/ali-dockerhub-2024/"$image"
+  old_image = $(echo "$image" | awk -F'/' '{print $NF}')
+  new_image="$registry"/ali-dockerhub-2024/"$old_image"
 
   # group log
   # https://docs.github.com/en/actions/using-workflows/workflow-commands-for-github-actions#grouping-log-lines
