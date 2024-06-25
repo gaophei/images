@@ -38,7 +38,7 @@ while read image; do
     echo "Pull Image FAILED: $image"
   fi
 
-  old_image=echo "$image" | awk -F'/' '{print $NF}'
+  old_image=$(echo "$image" | awk -F'/' '{print $NF}')
 
   new_image="$registry"/ali-dockerhub-2024/"$old_image"
   
