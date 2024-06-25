@@ -38,7 +38,7 @@ while read image; do
     echo "Pull Image FAILED: $image"
   fi
 
-  new_image="$registry"/library/"$image"
+  new_image="$registry"/ali-dockerhub-2024/"$image"
   
   docker tag "$image" "$new_image"
   if [[ $? == 0 ]]; then
