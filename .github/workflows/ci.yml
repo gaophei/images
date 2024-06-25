@@ -52,5 +52,5 @@ jobs:
           password: ${{ secrets.HARBOR_COMMON_PASSWORD }}
 
       - name: Retag & Push amd64 images
-        run: ./retag-images.sh images_amd64.txt ${{ secrets.HARBOR2_URL }}
+        run: ./retag-images.sh images_amd64.txt ${{ secrets.ALIYUN_REGISTRY }}
 
