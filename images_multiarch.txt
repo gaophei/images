@@ -112,4 +112,7 @@ tomcat:8.5-jre8-openjdk-slim
 tomcat:9-jre11
 tomcat:9-alpine
 tomcat:9-jre11-openjdk-slim
+
+//uptime kuma
+louislam/uptime-kuma:1
 // end of file
