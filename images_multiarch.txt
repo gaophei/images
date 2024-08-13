@@ -1,3 +1,4 @@
+/*
 // rancher
 rancher/hyperkube:v1.20.15-rancher2
 rancher/rancher:v2.5.15
@@ -116,3 +117,6 @@ tomcat:9-jre11-openjdk-slim
 //uptime kuma
 louislam/uptime-kuma:1
 // end of file
+*/
+
+gitea/gitea:1.21.1
